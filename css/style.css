@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ :root {
+    --red: #e50914;
+    --black: #141414;
+}
+
+body {
+    background-color: var(--black);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header .container {
+    display: flex;
+    background-color: var(--black);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.logo h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    font-weight: lighter;
+    color: var(--red);
+}
+
+header nav a {
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.container a:hover {
+    color: rgb(214, 210, 210);
+}
+
+
+/*Formatação Serie Sugestão*/
+
+main .sugestao {
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url(../imagens/st-fundo.jpg);
+    height: 400px;
+    background-size: cover;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .container {
+    margin: 20px
+}
+
+.sugestao .titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin: 90px 0 15px 0;
+    color: #fff;
+}
+
+.sugestao .descricao {
+    color: rgb(185, 184, 184);
+    margin-bottom: 50px;
+}
+
+.botoes .botao {
+    background-color: rgba(133, 131, 131, 0.212);
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-left: 20px;
+    transition: 300ms ease all;
+}
+
+.botao i {
+    margin: 3px
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.populares {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+
+/*Carrocel de imagens*/
+
+.box-series {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+    main .container {
+        margin: 10px;
+    }
+    .sugestao .titulo {
+        font-size: 30px;
+    }
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .botoes .botao {
+        margin: 0 0 5px 0;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header .container a {
+        margin: 2px;
+    }
+}
